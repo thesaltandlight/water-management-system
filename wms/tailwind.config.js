@@ -8,8 +8,27 @@ module.exports = {
       backgroundImage: {
         'landing-page': "url('./src/assets/homepageBackground.png')",
       },
+
+      // colors: {
+      //   placeholderColor: '#7BA5C9',
+      // },
     },
   },
-  plugins: [],
+
+  plugins: [
+    // function({ addUtilities }) {
+    //   addUtilities({
+    //     '.placeholder-center': {
+    //       'text-align': 'center',
+    //     },
+    //     '.placeholder-custom': {
+    //       '::placeholder': {
+    //         color: '#7BA5C9', // Custom placeholder color
+    //         'text-align': 'center', // Centered placeholder text
+    //       },
+    //     },
+    //   }, ['responsive', 'hover']);
+    // },
+  ]
 }
 

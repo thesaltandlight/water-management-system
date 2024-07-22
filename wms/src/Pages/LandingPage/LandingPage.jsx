@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 
 const text = [
   'keeps constipation away',
@@ -65,10 +65,10 @@ function LandingPage() {
       <img src='/assets/water.png' alt='Glass of water' className='absolute top-[300px] right-10 transform -translate-y-1/2 w-[650px]'/>
 
       <div className="absolute bottom-20 left-10 flex gap-7">
-        <button className="bg-[#1499D2] text-white text-xl font-bold py-4 px-12 rounded-full shadow-lg hover:bg-[#24619D] transition duration-300">
+        <button className="bg-[#1499D2] text-white text-xl font-bold py-4 px-12 rounded-2xl shadow-lg hover:bg-[#24619D] transition duration-300">
           Dive In
         </button>
-        <button className="bg-[#24619D] text-white text-xl font-bold py-4 px-12 rounded-full shadow-lg hover:bg-[#1499D2] transition duration-300">
+        <button className="bg-[#24619D] text-white text-xl font-bold py-4 px-12 rounded-2xl shadow-lg hover:bg-[#1499D2] transition duration-300">
           Sign Up
         </button>
       </div>
