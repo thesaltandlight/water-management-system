@@ -16,8 +16,10 @@ function Form(){
     return(
         <form className="w-full max-w-md mx-auto flex flex-col justify-center h-full">
             <div className="mb-6">
-            <h1 className="text-5xl mb-1 font-serif font-black text-[#24619D] w-[700px]">Welcome To AquaVerse</h1>
-            <h3 className="text-2xl font-serif font-bold text-[#7BA5C9] mb-8 ">Stay Hydrated, Stay Healthy</h3>
+            <h1 className="text-5xl mb-1 font-serif font-black text-[#24619D] w-[700px] fade-in-slide-up">
+                <span className="wave">Welcome</span> <span className="wave" style={{ animationDelay: '0.1s' }}>To</span> <span className="wave" style={{ animationDelay: '0.2s' }}>AquaVerse</span>
+            </h1>
+            <h3 className="text-2xl font-serif font-bold text-[#7BA5C9] mb-8 fade-in-slide-up">Stay Hydrated, Stay Healthy!</h3>
             </div>
 
             <div className="mb-6 relative">
