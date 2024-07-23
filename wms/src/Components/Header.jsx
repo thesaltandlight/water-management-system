@@ -1,4 +1,4 @@
-import {FaUserCircle, FaShoppingCart} from 'react-icons/fa'
+import {FaUserCircle, FaShoppingCart, FaBell} from 'react-icons/fa'
 
 function Header(){
     return(
@@ -16,6 +16,7 @@ function Header(){
             </nav>
 
             <div className='flex items-center space-x-6'>
+                <FaBell className='text-2xl cursor-pointer hover:text-[#24619D]'/>
                 <FaUserCircle className='text-2xl hover:text-[#24619D]'/>
                 <FaShoppingCart className='text-2xl hover:text-[#24619D]' />
             </div>
