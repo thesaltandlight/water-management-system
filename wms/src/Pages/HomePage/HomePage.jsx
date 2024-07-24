@@ -1,6 +1,8 @@
 import Header from "../../Components/Header"
 import Intro from "./Intro"
 import InfoSection from "./InfoSection"
+import AboutUs from "./AboutUs"
+// import OurProducts from "./OurProducts"
 
 function HomePage(){
     return(
@@ -9,6 +11,8 @@ function HomePage(){
         <main>
             <Intro/>
             <InfoSection/>
+            <AboutUs/>
+            {/* <OurProducts/> */}
         </main>
         
     </div>
