@@ -1,5 +1,6 @@
 import Header from "../../Components/Header"
 import Intro from "./Intro"
+import InfoSection from "./InfoSection"
 
 function HomePage(){
     return(
@@ -7,6 +8,7 @@ function HomePage(){
         <Header/>
         <main>
             <Intro/>
+            <InfoSection/>
         </main>
         
     </div>
