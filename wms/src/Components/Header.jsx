@@ -10,7 +10,7 @@ function Header(){
             <nav className='flex space-x-10 text-lg font-semibold'>
                 <a href='#' className='hover:text-[#24619D]'>Home</a>
                 <a href='#' className='hover:text-[#24619D]'>Our Products</a>
-                <a href='#' className='hover:text-[#24619D]'>About Us</a>
+                <a href='/aboutUs' className='hover:text-[#24619D]'>About Us</a>
                 <a href='#' className='hover:text-[#24619D]'>Delivery</a>
                 <a href='#' className='hover:text-[#24619D]'>Contact Us</a>
             </nav>

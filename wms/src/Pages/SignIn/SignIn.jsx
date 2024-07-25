@@ -9,17 +9,13 @@ function SignIn(){
             <img src="/assets/signin.jpg" alt="signIn" className="h-30 w-auto mb-20"/>
             </div>
 
-            <div className='w-1/2 flex flex-col items-center justify-end p-6 fixed right-0 top-0 h-full' >
-            <div className="mb-16 text-center">
-                <span className="text-[#24619D] font-serif font-semibold">Don't have an account?</span>
-            </div>
-            </div>
-
             <div className="w-1/2 flex flex-col items-left justify-center p-6 fixed right-0 top-0 h-full">
                 <div className="w-full max-w-lg">
                 <Form/>
                 </div>
             </div>
+
+            
             
         </div>
     )

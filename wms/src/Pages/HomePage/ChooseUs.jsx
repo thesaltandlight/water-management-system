@@ -17,7 +17,7 @@ return (
         <div key={index} className="flex flex-col items-center text-center p-4">
           <img src={feature.image} alt={feature.title} className="h-16 mb-4"/>
           <h3 className="text-xl font-bold text-[#24619D] mb-2">{feature.title}</h3>
-          <p className="text-sm text-gray-700">{feature.description}</p>
+          <p className="text-sm font-semibold text-gray-700">{feature.description}</p>
         </div>
       ))}
     </div>

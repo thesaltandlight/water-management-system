@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const text = [
   'keeps constipation away',
@@ -14,6 +15,7 @@ function LandingPage() {
   const [displayText, setDisplayText] = useState('')
   const [typing, setTyping] = useState(true)
   const [pausing, setPausing] = useState(false)
+  const navigate = useNavigate();
 
   useEffect(() => {
     let typingTimeout;
@@ -65,10 +67,10 @@ function LandingPage() {
       <img src='/assets/water.png' alt='Glass of water' className='absolute top-[300px] right-10 transform -translate-y-1/2 w-[650px]'/>
 
       <div className="absolute bottom-20 left-10 flex gap-7">
-        <button className="bg-[#1499D2] text-white text-xl font-bold py-4 px-12 rounded-2xl shadow-lg hover:bg-[#24619D] transition duration-300">
+        <button className="bg-[#1499D2] text-white text-xl font-bold py-4 px-12 rounded-2xl shadow-lg hover:bg-[#24619D] transition duration-300" onClick={()=> navigate('/home')}>
           Dive In
         </button>
-        <button className="bg-[#24619D] text-white text-xl font-bold py-4 px-12 rounded-2xl shadow-lg hover:bg-[#1499D2] transition duration-300">
+        <button className="bg-[#24619D] text-white text-xl font-bold py-4 px-12 rounded-2xl shadow-lg hover:bg-[#1499D2] transition duration-300" onClick={() => navigate('/signUp')}>
           Sign Up
         </button>
       </div>
