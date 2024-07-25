@@ -3,6 +3,7 @@ import Intro from "./Intro"
 import InfoSection from "./InfoSection"
 import AboutUs from "./AboutUs"
 import OurProducts from "./OurProducts"
+// import ChooseUs from "./ChooseUs"
 
 function HomePage(){
     return(
@@ -13,6 +14,7 @@ function HomePage(){
             <InfoSection/>
             <AboutUs/>
             <OurProducts/>
+            {/* <ChooseUs/> */}
         </main>
         
     </div>
