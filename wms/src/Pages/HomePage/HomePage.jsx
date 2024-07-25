@@ -4,6 +4,7 @@ import InfoSection from "./InfoSection"
 import AboutUs from "./AboutUs"
 import OurProducts from "./OurProducts"
 import ChooseUs from "./ChooseUs"
+import ContactUs from "./ContactUs"
 
 function HomePage(){
     return(
@@ -15,6 +16,7 @@ function HomePage(){
             <AboutUs/>
             <OurProducts/>
             <ChooseUs/>
+            <ContactUs/>
         </main>
         
     </div>

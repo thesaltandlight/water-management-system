@@ -11,8 +11,8 @@ const features = [
 function ChooseUs() {
 return (
   <div className="bg-[#DDE9F5] p-8 mt-16 rounded-xl mx-4 lg:mx-20 shadow-lg fade-in-slide-up">
-    <h2 className="text-center text-4xl font-extrabold text-[#24619D] mb-8">Why Choose Us</h2>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <h2 className="text-center text-5xl font-extrabold text-[#24619D] mt-8 mb-10">Why Choose Us</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
       {features.map((feature, index) => (
         <div key={index} className="flex flex-col items-center text-center p-4">
           <img src={feature.image} alt={feature.title} className="h-16 mb-4"/>
