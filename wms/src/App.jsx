@@ -1,8 +1,9 @@
 // import LandingPage from './Pages/LandingPage/LandingPage';
 // import SignUp from './Pages/SignUp/SignUp';
 // import SignIn from './Pages/SignIn/SignIn';
-// import AboutUs from './Pages/AboutUs/AboutUs';
 import HomePage from './Pages/HomePage/HomePage';
+// import AboutUs from './Pages/AboutUs/AboutUs';
+
 import './index.css'; 
 
 function App() {
