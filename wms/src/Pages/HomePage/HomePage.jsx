@@ -2,7 +2,7 @@ import Header from "../../Components/Header"
 import Intro from "./Intro"
 import InfoSection from "./InfoSection"
 import AboutUs from "./AboutUs"
-// import OurProducts from "./OurProducts"
+import OurProducts from "./OurProducts"
 
 function HomePage(){
     return(
@@ -12,7 +12,7 @@ function HomePage(){
             <Intro/>
             <InfoSection/>
             <AboutUs/>
-            {/* <OurProducts/> */}
+            <OurProducts/>
         </main>
         
     </div>

@@ -1,6 +1,7 @@
 function InfoSection(){
     return(
-        <div className="bg-[#DDE9F5] rounded-xl p-8 flex justify-between items center mx-4 lg:mx-20 shadow-lg fade-in-slide-up">
+        <div className="bg-[#DDE9F5] rounded-xl p-8 flex justify-between items center mx-40123
+         lg:mx-20 shadow-lg fade-in-slide-up">
             <div className="flex-1 text-center px-4">
                 <img src="/assets/waterHandshake.png" alt="Water Handshake" className="h-24 w-24 mx-auto mb-4"></img>
                 <p className="text-[#393939] ">Your health and safety are our top priorities. Experience pure, safe, and clean water every time.</p>

@@ -1,6 +1,6 @@
 function AboutUs(){
   return (
-    <section className="flex flex-col md:flex-row items-center p-8 bg-white rounded-lg shadow-md">
+    <section className="flex flex-col md:flex-row items-center p-4 bg-white rounded-lg">
       <div className="md:w-1/2 p-4">
         <img src="/assets/ourTeam.png" alt="Team meeting" className="w-full h-auto rounded-lg" />
       </div>
