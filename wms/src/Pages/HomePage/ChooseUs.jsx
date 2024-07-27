@@ -15,7 +15,7 @@ return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
       {features.map((feature, index) => (
         <div key={index} className="flex flex-col items-center text-center p-4">
-          <img src={feature.image} alt={feature.title} className="h-16 mb-4"/>
+          <img src={feature.image} alt={feature.title} className="h-20 mb-4"/>
           <h3 className="text-xl font-bold text-[#24619D] mb-2">{feature.title}</h3>
           <p className="text-sm font-semibold text-gray-700">{feature.description}</p>
         </div>

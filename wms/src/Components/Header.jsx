@@ -8,11 +8,11 @@ function Header(){
             </div>
 
             <nav className='flex space-x-10 text-lg font-semibold'>
-                <a href='/Home' className='hover:text-[#24619D]'>Home</a>
-                <a href='/OurProducts' className='hover:text-[#24619D]'>Our Products</a>
-                <a href='/AboutUs' className='hover:text-[#24619D]'>About Us</a>
-                <a href='/Delivery' className='hover:text-[#24619D]'>Delivery</a>
-                <a href='/ContactUs' className='hover:text-[#24619D]'>Contact Us</a>
+                <a href='/home' className='hover:text-[#24619D]'>Home</a>
+                <a href='/ourProducts' className='hover:text-[#24619D]'>Our Products</a>
+                <a href='/aboutUs' className='hover:text-[#24619D]'>About Us</a>
+                <a href='/delivery' className='hover:text-[#24619D]'>Delivery</a>
+                <a href='/contactUs' className='hover:text-[#24619D]'>Contact Us</a>
             </nav>
 
             <div className='flex items-center space-x-6'>

@@ -5,12 +5,12 @@ function ContactUs() {
   const [focusedInput, setFocusedInput] = useState({name: false, email: false, subject: false, message: false});
 
   const handleFocus = (field) => {
-    setFocusedInput((prevState) => ({...prevState, [field]: true}));
+    setFocusedInput((previousState) => ({...previousState, [field]: true}));
   };
 
   const handleBlur = (field, value) => {
     if (!value) {
-      setFocusedInput((prevState) => ({...prevState, [field]: false}));
+      setFocusedInput((previousState) => ({...previousState, [field]: false}));
     }
   };
 
