@@ -5,6 +5,8 @@ import SignIn from './Pages/SignIn/SignIn';
 import HomePage from './Pages/HomePage/HomePage';
 import OurProducts from './Pages/OurProducts/OurProducts';
 import AboutUs from './Pages/AboutUs/AboutUs';
+import Delivery from './Pages/Delivery/Delivery';
+import ContactUs from './Pages/ContactUs/ContactUs';
 
 import './index.css'; 
 
@@ -19,6 +21,8 @@ function App() {
         <Route path='/home' element={<HomePage/>}/>
         <Route path='/ourProducts' element={<OurProducts/>}/>
         <Route path='/aboutUs' element={<AboutUs/>}/>
+        <Route path='/delivery' element={<Delivery/>}/>
+        <Route path='/contactUs' element={<ContactUs/>}/>
       </Routes>
     </div>
     </Router>
