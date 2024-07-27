@@ -27,7 +27,7 @@ function OurProducts(){
                     <h1 className="text-[80px] font-extrabold font-serif text-[#24619D] fade-in-slide-up">
                         <span className="wave">OUR</span> <span className="wave" style={{animationDelay: '0.1s'}}>PRODUCTS</span>
                     </h1>
-                    <h2 className="text-3xl font-semibold font-serif mt-2  text-[#24619D] fade-in-slide-up">Refresh Your Life One Sip At A Time</h2>
+                    <h2 className="text-3xl font-semibold font-serif mt-2  text-[#7BA5C9] fade-in-slide-up">Refresh Your Life One Sip At A Time</h2>
                     </div>
                 </div>
                 
