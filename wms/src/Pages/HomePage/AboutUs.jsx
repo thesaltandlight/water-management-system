@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 function AboutUs(){
+  const navigate = useNavigate()
+
   return (
     <section className="flex flex-col md:flex-row items-center p-4 bg-white rounded-lg">
       <div className="md:w-1/2 p-4">
@@ -11,7 +15,7 @@ function AboutUs(){
           standards of water quality through rigorous testing, state-of-the-art filtration processes,and constant innovation. With a passion for excellence and a deep understanding of water
           safety, our team is here to provide you with the refreshing, pristine water you deserve.
         </p>
-        <a href="#" className="text-[#7FA3C7] hover:text-[#24619D] font-extrabold text-xl">Learn More &gt;&gt;</a>
+        <a href="#" className="text-[#7FA3C7] hover:text-[#24619D] font-extrabold text-xl" onClick={() => navigate('/AboutUs')}>Learn More &gt;&gt;</a>
       </div>
     </section>
   );
