@@ -1,5 +1,5 @@
 import Header from "../../Components/Header";
-
+import { Link } from "react-router-dom";
 
 const products = [
     {id: 1, image:'/assets/dispenser-bottles.jpg', name:'Dispenser Bottles', price:'₵40.00', addToCart:'/assets/addToCart.png'},
@@ -36,7 +36,7 @@ function OurProducts(){
                     <h2 className="text-center text-6xl ml-20 font-extrabold text-[#24619D] my-9">Dispenser Bottles</h2>
                         <div className="overflow-x-scroll flex space-x-4 mb-4 scrollbar-hide">
                         {products.map((product) => (
-                        <div key={product.id} className="min-w-[250px] h-[400px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center justify-center">
+                            <Link to={`/productDetails/${product.id}`} key={[product.id]} className="min-w-[250px] h-[400px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center justify-center">
                             <div className="h-56 w-full flex justify-center items-center bg-[#FFFFFF]">
                                 <img src={product.image} alt="product" className="h-44 w-auto" />
                             </div>
@@ -49,7 +49,7 @@ function OurProducts(){
                                     <img src={product.addToCart} alt="Add to Cart" className="h-10 w-10 cursor-pointer" />
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                     </div>
                 </div>
@@ -58,7 +58,7 @@ function OurProducts(){
                     <h2 className="text-center text-6xl ml-20 font-extrabold text-[#24619D] my-9">1L Bottles</h2>
                         <div className="overflow-x-scroll flex space-x-4 mb-4 scrollbar-hide">
                         {products.map((product) => (
-                        <div key={product.id} className="min-w-[250px] h-[400px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center justify-center">
+                        <Link to={`/productDetails/${product.id}`} key={[product.id]} className="min-w-[250px] h-[400px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center justify-center">
                             <div className="h-56 w-full flex justify-center items-center bg-[#FFFFFF]">
                                 <img src={product.image} alt="product" className="h-44 w-auto" />
                             </div>
@@ -71,7 +71,7 @@ function OurProducts(){
                                     <img src={product.addToCart} alt="Add to Cart" className="h-10 w-10 cursor-pointer" />
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                     </div>
                 </div>
@@ -80,7 +80,7 @@ function OurProducts(){
                     <h2 className="text-center text-6xl ml-20 font-extrabold text-[#24619D] my-9">750ml Bottles</h2>
                         <div className="overflow-x-scroll flex space-x-4 mb-4 scrollbar-hide">
                         {products.map((product) => (
-                        <div key={product.id} className="min-w-[250px] h-[400px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center justify-center">
+                        <Link to={`/productDetails/${product.id}`} key={[product.id]} className="min-w-[250px] h-[400px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center justify-center">
                             <div className="h-56 w-full flex justify-center items-center bg-[#FFFFFF]">
                                 <img src={product.image} alt="product" className="h-44 w-auto" />
                             </div>
@@ -93,7 +93,7 @@ function OurProducts(){
                                     <img src={product.addToCart} alt="Add to Cart" className="h-10 w-10 cursor-pointer" />
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                     </div>
                 </div>

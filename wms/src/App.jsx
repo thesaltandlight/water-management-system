@@ -7,6 +7,7 @@ import OurProducts from './Pages/OurProducts/OurProducts';
 import AboutUs from './Pages/AboutUs/AboutUs';
 import Delivery from './Pages/Delivery/Delivery';
 import ContactUs from './Pages/ContactUs/ContactUs';
+import ProductDetails from './Pages/ProductDetails/ProductDetails';
 
 import './index.css'; 
 
@@ -23,6 +24,7 @@ function App() {
         <Route path='/aboutUs' element={<AboutUs/>}/>
         <Route path='/delivery' element={<Delivery/>}/>
         <Route path='/contactUs' element={<ContactUs/>}/>
+        <Route path='/productDetails/:id' element={<ProductDetails/>}/>
       </Routes>
     </div>
     </Router>

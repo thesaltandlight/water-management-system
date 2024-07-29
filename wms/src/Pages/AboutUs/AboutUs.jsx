@@ -1,5 +1,6 @@
 import Header from "../../Components/Header"
-import {motion} from 'framer-motion'
+import { motion} from 'framer-motion'
+import ChooseUs from "../HomePage/ChooseUs"
 
 function AboutUs(){
     return(
@@ -29,20 +30,24 @@ function AboutUs(){
                 
 
                 <div className="flex flex-wrap justify-center gap-20 mt-20 mb-20">
-                    <motion.div className="max-w-sm p-6 bg-white shadow-lg rounded-lg transform transition-transform hover:scale-105" whileHover={{scale:1.1, backgroundColor: '#DDE9F5'}}>
-                    <h2 className="text-3xl font-semibold text-[#24619D] mb-4">Our Mission</h2>
-                    <p className="text-[#7BA5C9]">To deliver high-quality products and water management solutions that help communities conserve water and improve their quality of life.</p>
+                    <motion.div className="max-w-sm p-6 bg-white shadow-lg rounded-lg transform transition-transform hover:scale-105" whileHover={{scale:1.1, backgroundColor: '#24619D'}}>
+                    <motion.div className="text-3xl font-semibold text-[#24619D] mb-4" whileHover={{color: '#FFFFFF'}}>Our Mission</motion.div>
+                    <motion.div className="text-[#7BA5C9]" whileHover={{}}>To deliver high-quality products and water management solutions that help communities conserve water and improve their quality of life.</motion.div>
                     </motion.div>
 
-                    <motion.div className="max-w-sm p-6 bg-white shadow-lg rounded-lg transform transition-transform hover:scale-105" whileHover={{scale:1.1, backgroundColor: '#DDE9F5'}}>
+                    <motion.div className="max-w-sm p-6 bg-white shadow-lg rounded-lg transform transition-transform hover:scale-105" whileHover={{scale:1.1, backgroundColor: '#24619D'}}>
                     <h2 className="text-3xl font-semibold text-[#24619D] mb-4">Our Vision</h2>
                     <p className="text-[#7BA5C9]">A world where every drop of water is valued and efficiently managed for the benefit of all.</p>
                     </motion.div>
 
-                    <motion.div className="max-w-sm p-6 bg-white shadow-lg rounded-lg transform transition-transform hover:scale-105" whileHover={{scale:1.1, backgroundColor: '#DDE9F5'}}>
+                    <motion.div className="max-w-sm p-6 bg-white shadow-lg rounded-lg transform transition-transform hover:scale-105" whileHover={{scale:1.1, backgroundColor: '#24619D'}}>
                     <h2 className="text-3xl font-semibold text-[#24619D] mb-4">Our Values</h2>
                     <p className="text-[#7BA5C9]">Innovation, Sustainability, and Community Empowerment.</p>
                     </motion.div>
+                </div>
+
+                <div>
+                    <ChooseUs/>
                 </div>
             </main>
         </div>
