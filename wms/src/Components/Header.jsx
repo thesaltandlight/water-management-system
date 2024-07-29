@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import {FaUserCircle, FaShoppingCart, FaBell} from 'react-icons/fa'
 
 function Header(){
@@ -8,11 +9,11 @@ function Header(){
             </div>
 
             <nav className='flex space-x-10 text-lg font-semibold'>
-                <a href='/home' className='hover:text-[#24619D]'>Home</a>
-                <a href='/ourProducts' className='hover:text-[#24619D]'>Our Products</a>
-                <a href='/aboutUs' className='hover:text-[#24619D]'>About Us</a>
-                <a href='/delivery' className='hover:text-[#24619D]'>Delivery</a>
-                <a href='/contactUs' className='hover:text-[#24619D]'>Contact Us</a>
+                <NavLink to='/home' className={({isActive}) => isActive ? 'font-bold text-xl' : 'hover:text-[#24619D]'} >Home</NavLink>
+                <NavLink to='/ourProducts' className={({isActive}) => isActive ? 'font-bold text-xl' : 'hover:text-[#24619D]'} >Our Products</NavLink>
+                <NavLink to='/aboutUs' className={({isActive}) => isActive ? 'font-bold text-xl' : 'hover:text-[#24619D]'} >About Us</NavLink>
+                <NavLink to='/delivery' className={({isActive}) => isActive ? 'font-bold text-xl' : 'hover:text-[#24619D]'} >Delivery</NavLink>
+                <NavLink to='/contactUs' className={({isActive}) => isActive ? 'font-bold text-xl' : 'hover:text-[#24619D]'}>Contact Us</NavLink>
             </nav>
 
             <div className='flex items-center space-x-6'>
