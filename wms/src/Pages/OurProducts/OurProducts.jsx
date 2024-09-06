@@ -1,5 +1,6 @@
 import Header from "../../Components/Header";
 import { Link } from "react-router-dom";
+import { useCart } from "../Cart/CartContext";
 
 const products = [
     {id: 1, image:'/assets/dispenser-bottles.jpg', name:'Dispenser Bottles', price:'₵40.00', addToCart:'/assets/addToCart.png'},
@@ -14,6 +15,8 @@ const products = [
 
 
 function OurProducts(){
+    const {addToCart} = useCart();
+
     return(
         <div>
             <Header />
@@ -46,7 +49,7 @@ function OurProducts(){
                                 </div>
                                 <div className="flex justify-between items-center mt-4">
                                     <p className="text-lg font-semibold text-left">{product.price}</p>
-                                    <img src={product.addToCart} alt="Add to Cart" className="h-10 w-10 cursor-pointer" />
+                                    <img src={product.addToCart} alt="Add to Cart" className="h-10 w-10 cursor-pointer" onClick={() => addToCart({id:product.id, name: product.name, price: parseFloat(product.price.replace('₵', '')), image: product.image})}/>
                                 </div>
                             </div>
                         </Link>
@@ -68,7 +71,7 @@ function OurProducts(){
                                 </div>
                                 <div className="flex justify-between items-center mt-4">
                                     <p className="text-lg font-semibold text-left">{product.price}</p>
-                                    <img src={product.addToCart} alt="Add to Cart" className="h-10 w-10 cursor-pointer" />
+                                    <img src={product.addToCart} alt="Add to Cart" className="h-10 w-10 cursor-pointer" onClick={() => addToCart({id:product.id, name: product.name, price: parseFloat(product.price.replace('₵', '')), image: product.image})}/>
                                 </div>
                             </div>
                         </Link>
@@ -90,7 +93,7 @@ function OurProducts(){
                                 </div>
                                 <div className="flex justify-between items-center mt-4">
                                     <p className="text-lg font-semibold text-left">{product.price}</p>
-                                    <img src={product.addToCart} alt="Add to Cart" className="h-10 w-10 cursor-pointer" />
+                                    <img src={product.addToCart} alt="Add to Cart" className="h-10 w-10 cursor-pointer" onClick={() => addToCart({id:product.id, name: product.name, price: parseFloat(product.price.replace('₵', '')), image: product.image})}/>
                                 </div>
                             </div>
                         </Link>
