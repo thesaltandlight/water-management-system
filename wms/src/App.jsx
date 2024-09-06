@@ -10,11 +10,14 @@ import ContactUs from './Pages/ContactUs/ContactUs';
 import ProductDetails from './Pages/ProductDetails/ProductDetails';
 import Cart from './Pages/Cart/Cart';
 import { CartProvider } from './Pages/Cart/CartContext';
+import Notifications from './Pages/Notifications/Notifications';
+import { NotificationsProvider } from './Pages/Notifications/NotificationsContext';
 
 import './index.css'; 
 
 function App() {
   return (
+    <NotificationsProvider>
     <CartProvider>
       <Router>
       <div className="App">
@@ -29,10 +32,12 @@ function App() {
           <Route path='/contactUs' element={<ContactUs/>}/>
           <Route path='/productDetails/:id' element={<ProductDetails/>}/>
           <Route path='/cart' element={<Cart/>}/>
+          <Route path='/notifications' element={<Notifications/>} />
         </Routes>
       </div>
       </Router>
     </CartProvider>
+    </NotificationsProvider>
   );
 }
 

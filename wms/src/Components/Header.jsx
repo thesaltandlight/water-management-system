@@ -17,7 +17,7 @@ function Header(){
             </nav>
 
             <div className='flex items-center space-x-6'>
-                <FaBell className='text-2xl cursor-pointer hover:text-[#24619D]'/>
+                <NavLink to='/notifications'><FaBell className='text-2xl cursor-pointer hover:text-[#24619D]'/> </NavLink>
                 <FaUserCircle className='text-2xl hover:text-[#24619D]'/>
                 <NavLink to='/cart'> <FaShoppingCart className='text-2xl hover:text-[#24619D]' /> </NavLink>
             </div>

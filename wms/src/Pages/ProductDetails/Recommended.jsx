@@ -15,7 +15,7 @@ function RecommendedProducts({ products }) {
                                 <p className="text-base text-center font-extrabold text-[#24619D] mb-2">{product.name}</p>
                             </div>
                             <div className="flex justify-between items-center mt-4">
-                                <p className="text-lg font-semibold text-left">{product.price}</p>
+                                <p className="text-lg font-semibold text-left">₵{product.price.toFixed(2)}</p>
                                 <img src="/assets/addToCart.png" alt="Add to Cart" className="h-8 w-8 cursor-pointer" />
                             </div>
                         </div>
