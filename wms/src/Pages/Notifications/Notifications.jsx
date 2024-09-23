@@ -1,4 +1,3 @@
-// Notifications.jsx
 import Header from "../../Components/Header";
 import { useNotifications } from "../Notifications/NotificationsContext";
 
