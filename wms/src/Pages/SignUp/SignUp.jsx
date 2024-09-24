@@ -15,7 +15,7 @@ function SignUp(){
                 </div>
             </div>
 
-            {/* picture */}
+            {/* image */}
             <div className="w-1/2 flex flex-col items-center justify-center fixed right-0 top-0 h-full">
             <img src="/assets/signup.png" alt="signUp" className="h-30 w-auto mb-20"/>
             </div>

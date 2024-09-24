@@ -34,22 +34,25 @@ function Form(){
 
             </div>
 
-            <div className="mb-6 relative">
+            <div className="mb-2 relative">
                 <input id="name" name="name" type="text" className={`mt-1 p-4 w-[660px] h-[50px] border-2 border-[#CDD6DD] rounded-xl focus:outline-none focus:border-[#24619D] ${focusedInput.name ? 'border-[#24619D]': 'border-[#7BA5C9]'}`} required onFocus={()=> handleFocus('name')} onBlur={(e) => handleBlur('name', e.target.value)}></input>
                 <label className={`absolute left-2 duration-200 transition-all ${focusedInput.name ? '-top-1 text-xs font-medium text-[#165A9A] px-1 bg-white' : 'text-base font-medium top-4 text-[#CDD6DD]'}`} htmlFor="name">Name</label>
             </div>
-            <div className="mb-6 relative">
+            <div className="mb-2 relative">
                 <input id="email" name="email" type="email" className={`mt-1 p-4 w-[660px] h-[50px] border-2 placeholder-transparent border-[#CDD6DD] rounded-xl focus:outline-none focus:border-[#24619D] ${focusedInput.email ? 'border-[#24619D]': 'border-[#7BA5C9]'}`} placeholder="Email" required onFocus={()=> handleFocus('email')} onBlur={(e) => handleBlur('email', e.target.value)}></input>
                 <label className={`absolute left-2 duration-200 transition-all ${focusedInput.email ? '-top-1 text-xs font-medium text-[#165A9A] px-1 bg-white' : 'text-base font-medium top-4 text-[#CDD6DD]'}`} htmlFor="email">Email</label>
             </div>
-            <div className="mb-6 relative">
+            <div className="mb-8 relative">
                 <input id="password" name="password" type="password" className={`mt-1 p-4 w-[660px] h-[50px] border-2 placeholder-transparent border-[#CDD6DD] rounded-xl focus:outline-none focus:border-[#24619D] ${focusedInput.password ? 'border-[#24619D]': 'border-[#7BA5C9]'}`}placeholder="Password" required onFocus={()=> handleFocus('password')} onBlur={(e)=> handleBlur('password', e.target.value)}></input>
                 <label className={`absolute left-2 duration-200 transition-all ${focusedInput.password ? '-top-1 text-xs font-medium text-[#165A9A] px-1 bg-white' : 'text-base font-medium top-4 text-[#CDD6DD]'}`} htmlFor="password">Password</label>
             </div>
 
-            <div className="flex justify-left mt-11 ml-[250px]">
-            <button type="submit" className="w-[140px] text-xl font-bold bg-[#24619D] text-white p-3 rounded-xl hover:bg-[#7BA5C9]" onClick={() => navigate('/home')}>Sign Up</button>
+            <div className="flex justify-left">
+            <button type="submit" className="w-[140px] text-xl font-bold bg-[#165A9A] text-white p-3 rounded-full hover:bg-[#7BA5C9]" onClick={() => navigate('/home')}>Dive In</button>
+            <button type="submit" className="w-[100px] text-xl font-bold  text-[#CDD6DD] p-3 hover:text-[#165A9A]" onClick={() => navigate('/home')}>Skip</button>
             </div>
+
+            
 
             
             
