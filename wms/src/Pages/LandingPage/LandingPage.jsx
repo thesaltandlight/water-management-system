@@ -36,6 +36,7 @@ function LandingPage() {
     let pauseTimeout;
     let currentIndex = 0;
 
+    //typing effect
     if(typing){
       typingTimeout = setTimeout(() => {
         setDisplayText(currentText.slice(0, displayText.length + 1))
@@ -43,8 +44,8 @@ function LandingPage() {
           setTyping(false);
           setPausing(true);
         }
-      }, 25)
-    } else if (pausing){
+      }, 35)
+    } else if (pausing){ //pausing effect
       pauseTimeout = setTimeout(() => {
         setPausing(false)
       }, 1000)
