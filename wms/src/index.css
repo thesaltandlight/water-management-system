@@ -5,7 +5,6 @@
 
 
 
-
 /* wave animation----------------------------- */
 @keyframes wave {
   0% {transform: translateY(0);}
@@ -51,4 +50,3 @@
 .scrollbar-hide {
     scroll-behavior: smooth;
 }
-
