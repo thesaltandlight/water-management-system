@@ -2,7 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* hide scrollbar----------------------------- */
+html, body{
+  overflow: auto;
+}
 
+html::-webkit-scrollbar, body::-webkit-scrollbar{
+  display: none;
+}
+
+html,body{
+  scrollbar-width: none;
+}
 
 
 /* wave animation----------------------------- */
@@ -38,6 +49,8 @@
   animation: fadeInSlideUp 1s ease-out;
 }
   
+
+
 
 /* card layout */
 .scrollbar-hide::-webkit-scrollbar {
