@@ -15,7 +15,7 @@ function Reviews(){
               <h1 className="text-8xl text-[#095EAE] mb-4"></h1>
               <h1 className="text-9xl text-[#095EAE]" style={{ fontFamily: 'Inria Serif, serif'}}>&quot;</h1>
               <p className="text-center text-[#1E1E1E] mb-4">{review.review}</p>
-              <p className="font-semibold text-[#095EAE] mb-4">{review.name}</p>
+              <p className="font-bold text-lg text-[#095EAE] mb-4">{review.name}</p>
               <img src={review.image} alt={review.name} className="h-24 w-auto mb-4"></img>
             </div>
           ))

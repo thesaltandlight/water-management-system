@@ -1,17 +1,24 @@
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import AOS from "aos";
+import 'aos/dist/aos.css'
 
 function AboutUs(){
   const navigate = useNavigate()
 
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, [])
+
   return (
     <div className="flex flex-col md:flex-row items-center p-4 bg-white rounded-lg mt-36">
       {/* left picture */}
-      <div className="md:w-1/2 p-4 ml-10">
+      <div className="md:w-1/2 p-4 ml-10" data-aos="fade-right">
         <img src="/assets/aboutUsPicture.png" alt="Team meeting" className="w-[400px] h-auto rounded-lg" />
       </div>
 
       {/*  right section*/}
-      <div className="md:w-1/2 p-4">
+      <div className="md:w-1/2 p-4" data-aos="fade-left">
         <h1 className="text-7xl text-[#095EAE] font-bold -ml-64">| About Us</h1>
         <p className="text-xl mb-4 mt-10 -ml-64 mr-10">
           Our dedicated team of professionals work tirelessly to ensure that you receive the safest,cleanest, and purest water possible. Our experts are committed to maintaining the highest

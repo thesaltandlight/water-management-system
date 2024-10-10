@@ -8,7 +8,7 @@ import ContactUs from "./ContactUs"
 
 function HomePage(){
     return(
-    <div>
+    <div className="overflow-x-hidden">
         <Header/>
         <main>
             <Intro/>

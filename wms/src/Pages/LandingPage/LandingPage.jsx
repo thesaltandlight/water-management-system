@@ -72,7 +72,7 @@ function LandingPage() {
   return (
     <div className={`relative h-screen flex items-center justify-start overflow-hidden ${currentBackground}`} style={{backgroundSize: 'cover', backgroundAttachment: 'fixed', backgroundPosition: 'right', transition: 'background 0.5s ease-in-out'}}>
 
-      <div className='absolute inset-0 bg-[#165A9A] opacity-90 sm:opacity-0 z-10 pointer-events-none transition-opacity duration-500'></div>
+      <div className='absolute inset-0 bg-[#095EAE] opacity-90 sm:opacity-0 z-10 pointer-events-none transition-opacity duration-500'></div>
       <div className='z-10'>
       <img src='/assets/logo.png' alt='Logo' className='absolute top-4 left-4 w-[120px] md:w-[170px] filter brightness-0 invert md:filter-none' style={{color: '#165A9A'}}/>
       </div>
@@ -82,7 +82,7 @@ function LandingPage() {
         <h1 className="text-[#1E1E1E] text-4xl md:text-6xl mb-4 font-bold">A glass a day</h1>
         {/* displays alternating text */}
         <div style={{height: '48px', md:'72px'}}>
-        <h1 className="text-[#FFFFFF] md:text-[#165A9A] text-4xl md:text-6xl font-bold"> {displayText}</h1>
+        <h1 className="text-[#FFFFFF] md:text-[#095EAE] text-4xl md:text-6xl font-bold"> {displayText}</h1>
         </div>
       </div>
 

@@ -24,7 +24,7 @@ function Form(){
             <div className="mb-6">
             <h3 className="text-xl font-semibold text-[#B1C7D9] fade-in-slide-up" style={{fontFamily: 'Brush Script MT, cursive'}}>Stay Hydrated, Stay Healthy!</h3>
 
-            <h1 className="text-4xl mb-1 font-extrabold text-[#1E1E1E] w-[700px] fade-in-slide-up" style={{fontFamily: 'Impact, sans-serif'}}>Welcome To AquaVerse</h1>
+            <h1 className="text-4xl mb-1 font-extrabold text-[#1E1E1E] w-[700px] fade-in-slide-up" style={{fontFamily: 'Inria serif, serif'}}>Welcome To AquaVerse</h1>
 
             <div className="fade-in-slide-up">
                 <span className="text-[#B1C7D9] font-serif font-medium ">Already have an account?{' '}</span>
@@ -63,10 +63,6 @@ function Form(){
                 <button type="submit" className="w-[140px] text-lg font-bold bg-[#165A9A] text-white p-3 rounded-full hover:bg-[#7BA5C9]" onClick={() => navigate('/home')}>Dive In</button>
                 <button type="submit" className="w-[100px] text-lg font-bold text-[#B1C7D9] p-3 hover:text-[#165A9A]" onClick={() => navigate('/home')}>Skip</button>
             </div>
-
-            
-
-            
             
         </form>
     )
