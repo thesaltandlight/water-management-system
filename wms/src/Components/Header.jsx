@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import {FaUserCircle, FaShoppingCart} from 'react-icons/fa'
+import {FiUser, FiShoppingCart} from 'react-icons/fi'
 
 function Header(){
     return(
@@ -17,8 +17,8 @@ function Header(){
             </nav>
 
             <div className='flex items-center space-x-6'>
-                <FaUserCircle className='text-2xl hover:text-[#24619D]'/>
-                <NavLink to='/cart'> <FaShoppingCart className='text-2xl hover:text-[#24619D]' /> </NavLink>
+                <FiUser className='text-2xl hover:text-[#24619D]'/>
+                <NavLink to='/cart'> <FiShoppingCart className='text-2xl hover:text-[#24619D]' /> </NavLink>
             </div>
         </header>
     )

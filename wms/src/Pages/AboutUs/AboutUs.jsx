@@ -1,6 +1,6 @@
 import Header from "../../Components/Header"
 import { motion} from 'framer-motion'
-import ChooseUs from "../HomePage/ChooseUs"
+import ChooseUs from "../HomePage/Reviews"
 
 function AboutUs(){
     return(

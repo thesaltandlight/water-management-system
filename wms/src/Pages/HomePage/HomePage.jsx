@@ -3,7 +3,7 @@ import Intro from "./Intro"
 import InfoSection from "./InfoSection"
 import AboutUs from "./AboutUs"
 import OurProducts from "./OurProducts"
-import ChooseUs from "./ChooseUs"
+import Reviews from "./Reviews"
 import ContactUs from "./ContactUs"
 
 function HomePage(){
@@ -15,7 +15,7 @@ function HomePage(){
             <InfoSection/>
             <AboutUs/>
             <OurProducts/>
-            <ChooseUs/>
+            <Reviews/>
             <ContactUs/>
         </main>
         
