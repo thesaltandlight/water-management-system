@@ -1,8 +1,8 @@
 function WaterContains(){
     return(
-        <div className="bg-[#FFFFFF] py-16 px-4 lg:px-16 text-[#095EAE]">
+        <div className="py-16 px-4 lg:px-16">
             {/* Header */}
-            <h1 className="text-left font-bold text-6xl mb-6">What Our Water Contains</h1>
+            <h1 className="text-left font-bold text-6xl mb-6 text-[#095EAE]">What Our Water Contains</h1>
             <p className="text-left text-lg mb-12  text-[#1E1E1E]">Our water contains a balanced blend of essential minerals, including 25 mg/L of potassium, 15 mg/L of magnesium, 20 mg/L of sodium, and 35 mg/L of calcium. Additionally, it features 120 mg/L of bicarbonates for optimal alkalinity, with a pH level of 7.5, perfect for supporting your body&apos;s hydration and overall health.</p>
 
             {/* Bottle animations */}
