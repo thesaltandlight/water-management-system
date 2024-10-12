@@ -44,6 +44,7 @@ function WaterContains(){
                 <div className="absolute top-[50px] right-[350px] transform -translate-x-1/2 w-[50px] h-[50px] bg-[#133498] rounded-full flex items-center justify-center z-20"></div>
                 <div className="absolute bottom-[550px] left-[480px] transform -translate-x-1/2 w-[50px] h-[50px] bg-[#DDE9F5] rounded-full flex items-center justify-center z-20"></div>
                 <div className="absolute top-[170px] left-[50px] transform -translate-x-1/2 w-[90px] h-[90px] bg-[#A5CEEE] rounded-full flex items-center justify-center z-20"></div>
+                <div className="absolute bottom-[250px] right-[10px] transform -translate-x-1/2 w-[70px] h-[70px] bg-[#506EC8] rounded-full flex items-center justify-center z-20"></div>
 
 
             </div>

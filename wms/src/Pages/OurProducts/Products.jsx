@@ -14,12 +14,25 @@ const productList = [
 
 function Products() {
     const [popUp, setPopUp] = useState(false);
+    const [quantity, setQuantity] = useState(productList.map(() => 1))
 
-    const handleAddToCart = () => {
+    const handleAddToCart = (index) => {
         setPopUp(true)
+        setQuantity((previousQuantity) =>
+        previousQuantity.map((item, i) => (i === index ? 1 : item)))
         setTimeout(() => {
             setPopUp(false)
-        }, 2000)
+        }, 1700)
+    }
+
+    const increaseQuantity = (index) => {
+        setQuantity((previousQuantity) => 
+        previousQuantity.map((item, i) => (i === index ? item + 1 : item)))
+    }
+
+    const decreaseQuantity = (index) => {
+        setQuantity((previousQuantity) => 
+        previousQuantity.map((item, i) => (i === index && item > 1 ? item - 1 : item)))
     }
 
     return (
@@ -30,8 +43,8 @@ function Products() {
 
             {/* product cards */}
             <div className="overflow-x-scroll flex space-x-4 mt-5 mb-4 scrollbar-hide">
-                {productList.map((product) => (
-                    <div className="min-w-[250px] h-[400px] bg-white rounded-2xl border-2 border-[#095EAE] overflow-hidden flex flex-col items-center justify-center" key={product.id}>
+                {productList.map((product, index) => (
+                    <div className="min-w-[250px] h-[400px] bg-[#FFFFFF] rounded-2xl border-2 border-[#095EAE] overflow-hidden flex flex-col items-center justify-center" key={product.id}>
                         <Link to={`/productDetails/${product.id}`}>
                             {/* product image */}
                             <div className="h-56 w-full flex justify-center items-center bg-[#FFFFFF]">
@@ -40,18 +53,24 @@ function Products() {
 
                             {/* product name and price */}
                             <div className="p-4 flex flex-col justify-between items-center">
-                                <p className="text-xl text-center font-semibold text-[#24619D] mb-2">{product.name}</p>
+                                <p className="text-xl text-center font-semibold text-[#095EAE] mb-2">{product.name}</p>
                                 <p className="text-2xl text-center font-medium">{product.price}</p>
                             </div>
                         </Link>
+                        
+                        
+                        <div className="flex justify-between items-center p-6 w-full">
+                            <div className="flex items-center space-x-2">
+                                {/* quantity */}
+                                <button onClick={() => decreaseQuantity(index)} className="bg-[#095EAE] text-[#FFFFFF] font-bold py-2 px-3 rounded-lg">-</button>
+                                <span className="text-lg font-medium">{quantity[index]}</span>
+                                <button onClick={() => increaseQuantity(index)} className="bg-[#095EAE] text-[#FFFFFF] font-bold py-2 px-3 rounded-lg">+</button>
+                            </div>
 
-                        {/* buttons -------------------------*/}
-                        <div className="flex justify-between p-4">
-                            <button className="border-2 border-[#095EAE] text-[#095EAE] hover:bg-[#095EAE] hover:text-[#FFFFFF] py-2 px-4 rounded-xl font-medium transition duration-300">Buy Now</button>
-                            <button onClick={handleAddToCart} className="bg-[#095EAE] py-2 px-4 rounded-xl hover:bg-opacity-80 ml-10">
-                                <FiShoppingCart className="text-[#FFFFFF]" />
-                            </button>
+                            {/* cart */}
+                            <button onClick={() => handleAddToCart(index)} className="bg-[#FFFFFF] border-2 border-[#095EAE] py-3 px-3 rounded-xl hover:bg-opacity-80 ml-auto"><FiShoppingCart className=" text-[#095EAE] " /></button>
                         </div>
+                        
                     </div>
                 ))}
             </div>

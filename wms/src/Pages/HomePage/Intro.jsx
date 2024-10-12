@@ -13,6 +13,7 @@ function Intro(){
             <div className="flex-1 max-w-1/4 flex justify-center">
             <img src="/assets/HomepageIntro.png" alt="Water Journey" className='w-full h-auto max-w-lg ml-32 mr-10 fade-in-slide-up'></img>
             </div>
+
         </div>
     )
 }
