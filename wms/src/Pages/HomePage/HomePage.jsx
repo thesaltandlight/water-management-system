@@ -1,10 +1,10 @@
-import Header from "../../Components/Header"
 import Intro from "./Intro"
 import InfoSection from "./InfoSection"
 import AboutUs from "./AboutUs"
 import OurProducts from "./OurProducts"
 import Reviews from "./Reviews"
 import ContactUs from "./ContactUs"
+import Header from "../../Components/Header"
 
 function HomePage(){
     return(

@@ -10,7 +10,7 @@ function Header(){
 
             <nav className='flex space-x-10 text-lg font-semibold'>
                 <NavLink to='/home' className={({isActive}) => isActive ? 'font-bold text-xl' : 'hover:text-[#24619D]'} >Home</NavLink>
-                <NavLink to='/ourProducts' className={({isActive}) => isActive ? 'font-bold text-xl' : 'hover:text-[#24619D]'} >Our Products</NavLink>
+                <NavLink to='/ourProducts' className={({isActive}) => isActive ? 'font-bold text-xl' : 'hover:text-[#24619D]'}>Our Products</NavLink>
                 <NavLink to='/aboutUs' className={({isActive}) => isActive ? 'font-bold text-xl' : 'hover:text-[#24619D]'} >About Us</NavLink>
                 <NavLink to='/delivery' className={({isActive}) => isActive ? 'font-bold text-xl' : 'hover:text-[#24619D]'} >Delivery</NavLink>
                 <NavLink to='/contactUs' className={({isActive}) => isActive ? 'font-bold text-xl' : 'hover:text-[#24619D]'}>Contact Us</NavLink>
