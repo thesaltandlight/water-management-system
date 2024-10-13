@@ -14,8 +14,10 @@ function MeetTheTeam(){
                 {team.map((member) => (
                     <div key={member.id} className={`m-6 text-center ${member.id % 2 === 0 ? 'mt-52': ''}`}>
                         <img src={member.image} alt={member.name} className="rounded-full w-[300px] h-[300px] object-cover mx-auto mb-4"></img>
+                        <div className="leading-tight">
                         <h2 className="text-[32px] font-bold text-[#095EAE]">{member.name.toUpperCase()}</h2>
                         <p className="text-[24px] font-light text-[#1E1E1E]">{member.title}</p>
+                        </div>
                     </div>
                 ))}
             </div>
