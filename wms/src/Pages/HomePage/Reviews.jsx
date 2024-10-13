@@ -9,12 +9,11 @@ function Reviews(){
     <div className="w-11/12 mx-auto mb-10 mt-20">
       <h2 className="text-6xl font-bold text-center text-[#095EAE] mb-10">✰What Our Clients Say✰</h2>
 
-      <div className="flex space-x-4">
+      <div className="flex justify-between w-full">
         {reviewList.map((review) => (
-            <div key={review.id} className="min-w-[300px] bg-white p-6 rounded-xl hover:bg-[#DDE9F5] flex flex-col items-center transform transition duration-300 hover:scale-105" style={{borderRadius: '1rem'}}>
-              <h1 className="text-8xl text-[#095EAE] mb-4"></h1>
+            <div key={review.id} className="flex-1 mx-2 bg-[#FFF] p-6 rounded-xl hover:bg-[#DDE9F5] flex flex-col items-center transform transition duration-300 hover:scale-105" style={{borderRadius: '1rem'}}>
               <h1 className="text-9xl text-[#095EAE]" style={{ fontFamily: 'Inria Serif, serif'}}>&quot;</h1>
-              <p className="text-center text-[#1E1E1E] mb-4">{review.review}</p>
+              <p className="text-center text-[#1E1E1E] mb-4 flex-grow">{review.review}</p>
               <p className="font-bold text-lg text-[#095EAE] mb-4">{review.name}</p>
               <img src={review.image} alt={review.name} className="h-24 w-auto mb-4"></img>
             </div>
