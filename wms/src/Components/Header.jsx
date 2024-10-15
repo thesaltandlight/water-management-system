@@ -17,7 +17,7 @@ function Header(){
             </nav>
 
             <div className='flex items-center space-x-6'>
-                <FiUser className='text-2xl hover:text-[#24619D]'/>
+                <NavLink to='/profile'> <FiUser className='text-2xl hover:text-[#24619D]'/> </NavLink>
                 <NavLink to='/cart'> <FiShoppingCart className='text-2xl hover:text-[#24619D]' /> </NavLink>
             </div>
         </header>

@@ -10,6 +10,7 @@ import ContactUs from './Pages/ContactUs/ContactUs';
 import ProductDetails from './Pages/ProductDetails/ProductDetails';
 import Cart from './Pages/Cart/Cart';
 import { CartProvider } from './Pages/Cart/CartContext';
+import Profile from './Pages/UserProfile/Profile';
 
 import './index.css'; 
 
@@ -29,6 +30,7 @@ function App() {
           <Route path='/contactUs' element={<ContactUs/>}/>
           <Route path='/productDetails/:id' element={<ProductDetails/>}/>
           <Route path='/cart' element={<Cart/>}/>
+          <Route path='/profile' element={<Profile/>}/>
         </Routes>
       </div>
       </Router>

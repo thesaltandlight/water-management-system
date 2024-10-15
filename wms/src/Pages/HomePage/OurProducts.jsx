@@ -10,6 +10,7 @@ const products = [
     {id: 4, image:'/assets/sachet-water.jpeg', name:'750ml Bottled Water', price:'₵40.00'},
     {id: 5, image:'/assets/dispenser-bottles.jpg', name:'500ml Bottled Water', price:'₵40.00'},
     {id: 6, image:'/assets/bottled-water1.jpg', name:'330ml Bottled Water', price:'₵40.00'},
+    {id: 7, image:'/assets/bottled-water1.jpg', name:'500ml Sachet Water', price:'₵40.00'},
 ];
 
 function OurProducts() {
