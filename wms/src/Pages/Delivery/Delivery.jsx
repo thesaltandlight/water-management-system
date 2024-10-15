@@ -1,7 +1,7 @@
 import Header from "../../Components/Header";
 import OurServices from "./OurServices";
-// import WhyChooseUs from "./WhyChooseUs";
-// import TrackDelivery from "./TrackDelivery";
+import WhyChooseUs from "./WhyChooseUs";
+import TrackDelivery from "./TrackDelivery";
 
 function Delivery() {
     
@@ -24,8 +24,8 @@ function Delivery() {
                 </div>
                 
                 <OurServices/>
-                {/* <WhyChooseUs/>
-                <TrackDelivery/> */}
+                <WhyChooseUs/>
+                <TrackDelivery/>
             </main>
         </div>
     );

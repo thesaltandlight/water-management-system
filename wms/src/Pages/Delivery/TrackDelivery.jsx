@@ -1,56 +1,83 @@
-import { useState } from "react"
+import { useState } from "react";
 
-function TrackDelivery(){
+function TrackDelivery () {
     const [trackingNumber, setTrackingNumber] = useState('');
-    const [trackingResult, setTrackingResult] = useState(null); // To store the tracking result
+    const [trackingResult, setTrackingResult] = useState(null);
+    const [focusedInput, setFocusedInput] = useState({ trackingNumber: false });
 
     const handleTrackDelivery = (e) => {
         e.preventDefault();
-        // Simulate tracking with a mock response. You would replace this with a real API call.
+        // Mock API
         if (trackingNumber === '12345') {
-            setTrackingResult({
-                status: 'In Transit',
-                estimatedDelivery: 'Tomorrow, 12:00 PM'
-            });
+            setTrackingResult({ status: 'In Transit', estimatedDelivery: 'Tomorrow, 12:00 PM' });
         } else {
-            setTrackingResult({
-                status: 'Not Found',
-                estimatedDelivery: null
-            });
+            setTrackingResult({ status: 'Not Found', estimatedDelivery: null });
         }
     };
 
-    return(
-        <div className="w-11/12 mx-auto mt-10">
-                    <h2 className="text-4xl font-bold text-center text-[#24619D] mb-6">Track Your Delivery</h2>
-                    <form onSubmit={handleTrackDelivery} className="max-w-xl mx-auto bg-white p-6 rounded shadow-lg">
-                        <label htmlFor="trackingNumber" className="block text-xl font-semibold mb-2 text-[#24619D]">Enter Your Tracking Number:</label>
-                        <input
-                            type="text"
-                            id="trackingNumber"
-                            value={trackingNumber}
-                            onChange={(e) => setTrackingNumber(e.target.value)}
-                            className="w-full p-3 mb-4 border border-gray-300 rounded-lg"
-                            placeholder="Enter tracking number"
-                            required
-                        />
-                        <button type="submit" className="w-full py-3 bg-[#24619D] text-white font-bold rounded hover:bg-[#1c4c76]">Track Delivery</button>
-                    </form>
+    const handleFocus = () => {
+        setFocusedInput({ trackingNumber: true });
+    };
 
-                    {/* Display Tracking Result */}
-                    {trackingResult && (
-                        <div className="max-w-xl mx-auto mt-6 bg-[#DDE9F5] p-6 rounded shadow-lg">
-                            <h3 className="text-2xl font-semibold text-center text-[#24619D]">Tracking Status: {trackingResult.status}</h3>
-                            {trackingResult.estimatedDelivery && (
-                                <p className="text-lg text-center mt-4">Estimated Delivery: {trackingResult.estimatedDelivery}</p>
-                            )}
-                            {trackingResult.status === 'Not Found' && (
-                                <p className="text-lg text-center mt-4 text-red-500">No delivery found for the provided tracking number.</p>
-                            )}
-                        </div>
+    const handleBlur = (value) => {
+        if (!value) {
+            setFocusedInput({ trackingNumber: false });
+        }
+    };
+
+    return (
+        <div className="w-full h-full flex flex-col justify-center items-center mt-10">
+            <div className="mb-6 text-center">
+                <h3 className="text-xl font-semibold text-[#B1C7D9] fade-in-slide-up" style={{ fontFamily: 'Brush Script MT, cursive' }}>Fast & Reliable Water Delivery</h3>
+                <h1 className="text-6xl mb-1 font-bold text-[#095EAE] fade-in-slide-up">Track Your Delivery</h1>
+                <p className="text-lg font-normal">Stay informed every step of the way—track your delivery in real-time for added convenience and peace of mind!</p>
+            </div>
+            
+            <form onSubmit={handleTrackDelivery} className="w-full px-4 max-w-screen-xl mx-auto flex justify-center mb-6">
+                <div className="grid grid-cols-4 gap-4 w-full">
+                    <div className="relative col-span-3">
+                        <input 
+                            id="trackingNumber" 
+                            name="trackingNumber" 
+                            type="text" 
+                            value={trackingNumber} 
+                            onChange={(e) => setTrackingNumber(e.target.value)} 
+                            onFocus={handleFocus} 
+                            onBlur={(e) => handleBlur(e.target.value)} 
+                            className={`p-4 w-full border border-[#B1C7D9] rounded-xl focus:outline-none focus:border-[#24619D] ${focusedInput.trackingNumber ? 'border-[#24619D]' : 'border-[#7BA5C9]'}`} 
+                            required 
+                        />
+                        <label 
+                            className={`absolute left-4 duration-200 transition-all ${focusedInput.trackingNumber ? '-top-2 text-xs font-medium text-[#165A9A] px-1 bg-[#FFFFFF]' : 'text-base top-4 text-[#B1C7D9]'}`} 
+                            htmlFor="trackingNumber"
+                        >
+                            Enter Your Tracking Number
+                        </label>
+                    </div>
+                    <button 
+                        type="submit" 
+                        className="col-span-1 py-3 px-6 bg-[#095EAE] text-[#FFFFFF] font-bold rounded-xl hover:bg-[#7BA5C9] transition-all w-full"
+                    >
+                        Track Order
+                    </button>
+                </div>
+            </form>
+            
+            {/* Display Tracking Result */}
+            {trackingResult && (
+                <div className="max-w-md mx-auto mt-6 bg-[#DDE9F5] p-6 rounded-xl shadow-lg">
+                    <h3 className="text-2xl font-semibold text-center text-[#24619D]">Tracking Status: {trackingResult.status}</h3>
+                    {trackingResult.estimatedDelivery && (
+                        <p className="text-lg text-center mt-4">Estimated Delivery: {trackingResult.estimatedDelivery}</p>
+                    )}
+                    
+                    {trackingResult.status === 'Not Found' && (
+                        <p className="text-lg text-center mt-4 text-red-500">No delivery found for the provided tracking number.</p>
                     )}
                 </div>
-    )
+            )}
+        </div>
+    );
 }
 
-export default TrackDelivery
+export default TrackDelivery;
