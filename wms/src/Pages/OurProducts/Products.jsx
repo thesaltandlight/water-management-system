@@ -54,7 +54,7 @@ function Products() {
 
                             {/* product name and price */}
                             <div className="p-4 flex flex-col justify-between items-center">
-                                <p className="text-xl text-center font-semibold text-[#095EAE] mb-2 truncate w-full">{product.name}</p>
+                                <p className="text-xl text-center font-semibold text-[#095EAE] mb-2 truncate ">{product.name}</p>
                                 <p className="text-2xl text-center font-medium">{product.price}</p>
                             </div>
                         </Link>
