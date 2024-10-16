@@ -55,22 +55,22 @@ function ContactUs() {
           <form className="space-y-4">
             <div className="relative">
               <input id="name" name="name" type="text" value={formData.name} onChange={handleChange} className={`w-full p-4 border border-[#7BA5C9] rounded-xl focus:outline-none focus:border-[#24619D] ${focusedInput.name || formData.name ? 'border-[#095EAE]' : 'border-[#7BA5C9]'} ${error.general && !formData.name ? 'border-[#E93737]' : ''}`} required onFocus={() => handleFocus('name')} onBlur={(e) => handleBlur('name', e.target.value)}></input>
-              <label className={`absolute left-2 transition-all duration-200 ${focusedInput.name || formData.name ? '-top-1 text-xs text-[#095EAE] px-1 bg-[#FFFFFF]' : 'text-base top-4 text-[#7BA5C9]'} ${error.general && !formData.name && !focusedInput.name && !formData.name ? 'text-[#E93737]' : ''}`} htmlFor="name">Name</label>
+              <label className={`absolute left-2 transition-all duration-200 ${focusedInput.name || formData.name ? '-top-2 text-xs text-[#095EAE] px-1 bg-[#FFFFFF]' : 'text-base top-4 text-[#7BA5C9]'} ${error.general && !formData.name && !focusedInput.name && !formData.name ? 'text-[#E93737]' : ''}`} htmlFor="name">Name</label>
             </div>
 
             <div className="relative">
               <input id="email" name="email" type="email" value={formData.email} onChange={handleChange} className={`w-full p-4 border border-[#7BA5C9] rounded-xl focus:outline-none focus:border-[#24619D] ${focusedInput.email || formData.email ? 'border-[#095EAE]' : 'border-[#7BA5C9]'} ${error.general && !formData.email ? 'border-[#E93737]' : ''} ${error.emailInvalid ? 'border-[#E93737]' : ''}`} required onFocus={() => handleFocus('email')} onBlur={(e) => handleBlur('email', e.target.value)}/>
-              <label className={`absolute left-2 transition-all duration-200 ${focusedInput.email || formData.email ? '-top-1 text-xs text-[#095EAE] px-1 bg-[#FFFFFF]' : 'text-base top-4 text-[#7BA5C9]'} ${error.general && !formData.email && !focusedInput.email && !formData.email ? 'text-[#E93737]' : ''}`} htmlFor="email">Email</label>
+              <label className={`absolute left-2 transition-all duration-200 ${focusedInput.email || formData.email ? '-top-2 text-xs text-[#095EAE] px-1 bg-[#FFFFFF]' : 'text-base top-4 text-[#7BA5C9]'} ${error.general && !formData.email && !focusedInput.email && !formData.email ? 'text-[#E93737]' : ''}`} htmlFor="email">Email</label>
             </div>
 
             <div className="relative">
               <input id="subject" name="subject" type="text" value={formData.subject} onChange={handleChange} className={`w-full p-4 border border-[#7BA5C9] rounded-xl focus:outline-none focus:border-[#24619D] ${focusedInput.subject || formData.subject ? 'border-[#095EAE]' : 'border-[#7BA5C9]'} ${error.general && !formData.subject ? 'border-[#E93737]' : ''}`} required onFocus={() => handleFocus('subject')} onBlur={(e) => handleBlur('subject', e.target.value)}/>
-              <label className={`absolute left-2 transition-all duration-200 ${focusedInput.subject || formData.subject ? '-top-1 text-xs text-[#095EAE] px-1 bg-[#FFFFFF]' : 'text-base top-4 text-[#7BA5C9]'} ${error.general && !formData.subject && !focusedInput.subject && !formData.subject ? 'text-[#E93737]' : ''}`} htmlFor="subject">Subject</label>
+              <label className={`absolute left-2 transition-all duration-200 ${focusedInput.subject || formData.subject ? '-top-2 text-xs text-[#095EAE] px-1 bg-[#FFFFFF]' : 'text-base top-4 text-[#7BA5C9]'} ${error.general && !formData.subject && !focusedInput.subject && !formData.subject ? 'text-[#E93737]' : ''}`} htmlFor="subject">Subject</label>
             </div>
             
             <div className="relative">
               <textarea id="message" name="message" value={formData.message} onChange={handleChange} className={`w-full p-4 border border-[#7BA5C9] rounded-lg focus:outline-none focus:border-[#24619D] h-32 resize-none ${focusedInput.message || formData.message ? 'border-[#095EAE]' : 'border-[#7BA5C9]'} ${error.general && !formData.message ? 'border-[#E93737]' : ''}`} required onFocus={() => handleFocus('message')} onBlur={(e) => handleBlur('message', e.target.value)}></textarea>
-              <label className={`absolute left-2 transition-all duration-200 ${focusedInput.message || formData.message ? '-top-1 text-xs text-[#095EAE] px-1 bg-[#FFFFFF]' : 'text-base top-4 text-[#7BA5C9]'} ${error.general && !formData.message && !focusedInput.message && !formData.message ? 'text-[#E93737]' : ''}`} htmlFor="message">Write your message here...</label>
+              <label className={`absolute left-2 transition-all duration-200 ${focusedInput.message || formData.message ? '-top-2 text-xs text-[#095EAE] px-1 bg-[#FFFFFF]' : 'text-base top-4 text-[#7BA5C9]'} ${error.general && !formData.message && !focusedInput.message && !formData.message ? 'text-[#E93737]' : ''}`} htmlFor="message">Write your message here...</label>
             </div>
 
             {error && <p className='text-[#E93737] flex items-center'><FaExclamation className='text-[#E93737] mr-2'></FaExclamation>Uh oh! You missed a spot. Please fill in all fields and try again</p>}

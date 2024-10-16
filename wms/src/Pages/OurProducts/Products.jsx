@@ -4,13 +4,13 @@ import { useState } from "react";
 import { FaCheckCircle } from "react-icons/fa";
 
 const productList = [
-    {id: 1, image:'/assets/dispenser-bottles.jpg', name:'19L Dispenser Bottle', price:'₵40.00'},
-    {id: 2, image:'/assets/bottled-water1.jpg', name:'5L Bottled Water', price:'₵40.00'},
-    {id: 3, image:'/assets/bottled-water2.jpg', name:'1.5L Bottled Water', price:'₵40.00'},
-    {id: 4, image:'/assets/sachet-water.jpeg', name:'750ml Bottled Water', price:'₵40.00'},
-    {id: 5, image:'/assets/dispenser-bottles.jpg', name:'500ml Bottled Water', price:'₵40.00'},
-    {id: 6, image:'/assets/bottled-water1.jpg', name:'330ml Bottled Water', price:'₵40.00'},
-    {id: 7, image:'/assets/bottled-water1.jpg', name:'500ml Sachet Water', price:'₵40.00'},
+    {id: 1, image:'/assets/DispenserBottle.png', name:'19L Dispenser Bottle', price:'₵40.00'},
+    {id: 2, image:'/assets/5LBottle.png', name:'5L Bottled Water', price:'₵18.00'},
+    {id: 3, image:'/assets/1.5LBottle.png', name:'1.5L Bottled Water', price:'₵48.00'},
+    {id: 4, image:'/assets/750mlBottle.png', name:'750ml Bottled Water', price:'₵40.00'},
+    {id: 5, image:'/assets/500mlBottle.png', name:'500ml Bottled Water', price:'₵30.00'},
+    {id: 6, image:'/assets/330mlBottle.png', name:'330ml Bottled Water', price:'₵19.00'},
+    {id: 7, image:'/assets/500mlSachet.png', name:'500ml Sachet Water Pack', price:'₵10.00'},
 ];
 
 function Products() {
@@ -54,7 +54,7 @@ function Products() {
 
                             {/* product name and price */}
                             <div className="p-4 flex flex-col justify-between items-center">
-                                <p className="text-xl text-center font-semibold text-[#095EAE] mb-2">{product.name}</p>
+                                <p className="text-xl text-center font-semibold text-[#095EAE] mb-2 truncate w-full">{product.name}</p>
                                 <p className="text-2xl text-center font-medium">{product.price}</p>
                             </div>
                         </Link>
