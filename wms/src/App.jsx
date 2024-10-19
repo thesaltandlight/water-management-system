@@ -11,7 +11,7 @@ import ProductDetails from './Pages/ProductDetails/ProductDetails';
 import Cart from './Pages/Cart/Cart';
 import { CartProvider } from './Pages/Cart/CartContext';
 import Profile from './Pages/UserProfile/Profile';
-
+import Notifications from './Pages/UserProfile/Notifications';
 
 import './index.css'; 
 
@@ -32,6 +32,7 @@ function App() {
           <Route path='/productDetails/:id' element={<ProductDetails/>}/>
           <Route path='/cart' element={<Cart/>}/>
           <Route path='/profile' element={<Profile/>}/>
+          <Route path='/notifications' element={<Notifications/>}/>
         </Routes>
       </div>
       </Router>

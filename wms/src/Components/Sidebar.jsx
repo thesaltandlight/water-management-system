@@ -11,17 +11,17 @@ function Sidebar(){
 
             <nav>
                 <ul className="space-y-4">
-                    {/* profile button */}
+                    {/* profile */}
                     <li>
-                        <NavLink to="/profile" className={({isActive}) => isActive ? "flex items-center space-x-2 text-[#095EAE]  text-[16px] font-bold bg-[#DDE9F5] rounded-lg px-4 py-3 w-[98%] mx-auto" : "flex items-center space-x-2 text-[16px] font-bold text-[#095EAE]  hover:text-[#A5CEEE] px-4 py-1"}><FiUser/><span>Profile</span></NavLink>
+                        <NavLink to="/profile" className={({isActive}) => isActive ? "flex items-center space-x-2 text-[#095EAE]  text-[16px] font-bold bg-[#DDE9F5] rounded-lg px-4 py-3 w-[98%] mx-auto" : "flex items-center space-x-2 text-[16px] font-bold text-[#095EAE]  hover:text-[#A5CEEE] px-4 py-3"}><FiUser/><span>Profile</span></NavLink>
                     </li>
                     {/* order history button */}
                     <li>
-                        <NavLink to="/orderHistory" className={({isActive}) => isActive ? "flex items-center space-x-2 text-[16px] font-bold bg-[#DDE9F5] rounded-lg px-4 py-3 w-[98%] mx-auto" : "flex items-center space-x-2 text-[16px] font-bold text-[#095EAE]  hover:text-[#A5CEEE] px-4 py-1"}><FiList/><span>Order History</span></NavLink>
+                        <NavLink to="/orderHistory" className={({isActive}) => isActive ? "flex items-center space-x-2 text-[#095EAE]   text-[16px] font-bold bg-[#DDE9F5] rounded-lg px-4 py-3 w-[98%] mx-auto" : "flex items-center space-x-2 text-[16px] font-bold text-[#095EAE]  hover:text-[#A5CEEE] px-4 py-3"}><FiList/><span>Order History</span></NavLink>
                     </li>
                     {/* notifications button */}
                     <li>
-                        <NavLink to="/notifications" className={({isActive}) => isActive ? "flex items-center space-x-2 text-[16px] font-bold bg-[#DDE9F5] rounded-lg px-4 py-3 w-[98%] mx-auto" : "flex items-center space-x-2 text-[16px] font-bold text-[#095EAE]  hover:text-[#A5CEEE] px-4 py-1"}><FiBell/><span>Notifications</span></NavLink>
+                        <NavLink to="/notifications" className={({isActive}) => isActive ? "flex items-center space-x-2 text-[#095EAE]  text-[16px] font-bold bg-[#DDE9F5] rounded-lg px-4 py-3 w-[98%] mx-auto" : "flex items-center space-x-2 text-[16px] font-bold text-[#095EAE]  hover:text-[#A5CEEE] px-4 py-3"}><FiBell/><span>Notifications</span></NavLink>
                     </li>
                 </ul>
             </nav>
