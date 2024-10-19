@@ -12,6 +12,7 @@ import Cart from './Pages/Cart/Cart';
 import { CartProvider } from './Pages/Cart/CartContext';
 import Profile from './Pages/UserProfile/Profile';
 
+
 import './index.css'; 
 
 function App() {

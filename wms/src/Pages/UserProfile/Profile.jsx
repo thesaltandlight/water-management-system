@@ -51,7 +51,7 @@ function Profile(){
                 <div className="flex items-center space-x-6 mb-10">
                     <img src={profilePicture} alt="User Profile" className="w-[200px] h-[200px] rounded-full object-cover"/>
                     <div>
-                        <h1 className="text-[32px] font-bold">{user.firstName.toUpperCase() || 'FirstName'} {user.lastName.toUpperCase() || 'LastName'}</h1>
+                        <h1 className="text-[32px] font-bold text-[#095EAE] ">{user.firstName.toUpperCase() || 'FirstName'} {user.lastName.toUpperCase() || 'LastName'}</h1>
                         <p className="text-[16px] font-medium text-[#757575]">Joined 2 years ago</p>
                         <div className="mt-3 space-x-4">
                             <button onClick={triggerFileInput} className="px-4 py-2 bg-[#095EAE] text-[#FFF] font-semibold rounded-lg">Upload New Photo</button>
@@ -63,7 +63,7 @@ function Profile(){
 
                 {/* Personal Information */}
                 <div>
-                    <h2 className="text-[20px] font-semibold mb-4">Personal Information</h2>
+                    <h2 className="text-[20px] font-semibold mb-4 text-[#095EAE] ">Personal Information</h2>
                     <div className="-mt-2 grid grid-cols-3 gap-1">
                         {[{label: 'First Name', value:'firstName'}, {label: 'Last Name', value: 'lastName'}, {label: 'Username', value: 'username'}, {label: 'Phone Number', value: 'phone'}, {label: 'Email Address', value: 'email', type: 'email'},].map((field) => (
                             <div key={field.value} className="relative flex-1">
@@ -76,7 +76,7 @@ function Profile(){
 
                 {/* Address Details */}
                 <div className="mt-5">
-                    <h2 className="text-[20px] font-semibold mb-4">Address Details</h2>
+                    <h2 className="text-[20px] font-semibold mb-4 text-[#095EAE] ">Address Details</h2>
                     <div className="-mt-2 grid grid-cols-3 gap-1">
                         {[{label: 'Region/Province', value: 'region'}, {label: 'City', value: 'city'}, {label: 'District', value: 'district'}, {label: 'Street Address', value: 'address'}].map((field) => (
                             <div key={field.value} className="relative flex-1">
@@ -89,7 +89,7 @@ function Profile(){
 
                 {/* Payment Info */}
                 <div className="mt-5">
-                    <h2 className="text-[20px] font-semibold mb-4">Payment Information</h2>
+                    <h2 className="text-[20px] font-semibold mb-4 text-[#095EAE] ">Payment Information</h2>
                     <div className="-mt-2 grid grid-cols-3 gap-1">
                         {[{label: 'Cardholder Name', value: 'cardName'}, {label: 'Card Number', value: 'cardNumber'}, {label: 'Expiration Date', value: 'expiration'}, {label: 'CVV', value: 'CVV'}].map((field) => (
                             <div key={field.value} className="relative flex-1">
@@ -102,13 +102,13 @@ function Profile(){
 
                 {/* Security */}
                 <div className="mt-5">
-                    <h2 className="text-[20px] font-semibold mb-4">Security</h2>
+                    <h2 className="text-[20px] font-semibold mb-4 text-[#095EAE] ">Security</h2>
                     <div className="-mt-2 grid grid-cols-1 gap-5 items-center">
                         <div className="flex items-center w-[735px] space-x-4">
                             <div className="relative flex-1 mb-5">
                                 <input type={passwordVisibility ? "text" : "password"} name="password" value={user.password} onChange={handleChange} onFocus={() => handleFocus('password')} onBlur={(e) => handleBlur('password', e.target.value)} className={`mt-1 p-4 w-full h-[50px] border rounded-xl focus:outline-none focus:border-[#095EAE] ${focusedInput.password ? 'border-[#095EAE]' : 'border-[#A5CEEE]'}`} required />
                                 <label className={`absolute left-2 duration-200 transition-all ${focusedInput.password ? '-top-1 text-xs font-medium text-[#095EAE] px-1 bg-[#FFF]' : 'text-base top-4 text-[#A5CEEE]'}`} htmlFor="password">Password</label>
-                                <div className="absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer text-[#A5CEEE]" onClick={() => setPasswordVisibility(!passwordVisibility)}>{passwordVisibility ? <FiEyeOff size={20} className="text-[#1E1E1E]"></FiEyeOff> : <FiEye size={20} className="text-[#1E1E1E]"/>}</div>
+                                <div className="absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer text-[#A5CEEE]" onClick={() => setPasswordVisibility(!passwordVisibility)}>{passwordVisibility ? <FiEyeOff size={20} className="text-[#095EAE] "></FiEyeOff> : <FiEye size={20} className="text-[#095EAE] "/>}</div>
                             </div>
                             <button className="px-4 py-3 mb-4 text-[#FFF] bg-[#095EAE] hover:bg-opacity-80 font-semibold rounded-lg">Change Password</button>
                         </div>
