@@ -6,5 +6,6 @@ heading: [#095EAE]
 pressed: [#506EC8]
 border: [#A5CEEE]
 inactive: [#133498]
+red: [#E93737]
 
 
