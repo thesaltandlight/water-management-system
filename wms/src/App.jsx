@@ -8,10 +8,10 @@ import AboutUs from './Pages/AboutUs/AboutUs';
 import Delivery from './Pages/Delivery/Delivery';
 import ContactUs from './Pages/ContactUs/ContactUs';
 import ProductDetails from './Pages/ProductDetails/ProductDetails';
-import Cart from './Pages/Cart/Cart';
-import { CartProvider } from './Pages/Cart/CartContext';
 import Profile from './Pages/UserProfile/Profile';
 import Notifications from './Pages/UserProfile/Notifications';
+import { CartProvider } from './Pages/Cart/CartContext';
+import ShoppingCart from './Pages/Cart/ShoppingCart';
 
 import './index.css'; 
 
@@ -30,9 +30,10 @@ function App() {
           <Route path='/delivery' element={<Delivery/>}/>
           <Route path='/contactUs' element={<ContactUs/>}/>
           <Route path='/productDetails/:id' element={<ProductDetails/>}/>
-          <Route path='/cart' element={<Cart/>}/>
+          <Route path='/cart' element={<ShoppingCart/>}/>
           <Route path='/profile' element={<Profile/>}/>
           <Route path='/notifications' element={<Notifications/>}/>
+          <Route path='/checkout' element={<ShoppingCart/>}/>
         </Routes>
       </div>
       </Router>
