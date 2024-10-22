@@ -1,13 +1,17 @@
+import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import { FiUser, FiList, FiBell } from "react-icons/fi";
+import { FiUser, FiList, FiBell, FiArrowLeft } from "react-icons/fi";
 
 function Sidebar(){
+    const navigate = useNavigate()
+
     return(
         <aside className="w-1/5 bg-[#FFF] p-6 fixed top-0 left-0 h-full">
             <div className="absolute top-[5%] bottom-[5%] w-[1px] bg-[#757575] bg-opacity-40 right-0"></div>
-            <NavLink to="/home" className="text-[#1E1E1E] mb-6 flex items-center space-x-2">
-            <span className="text-[16px] text-[#095EAE] font-bold">← Back To Home</span>
-            </NavLink>
+            <button onClick={() => navigate(-1)} className="text-[#1E1E1E] mb-6 flex items-center space-x-2">
+            <FiArrowLeft className="text-[#095EAE]"/>
+            <span className="text-[16px] text-[#095EAE] font-bold">Back</span>
+            </button>
 
             <nav>
                 <ul className="space-y-4">
