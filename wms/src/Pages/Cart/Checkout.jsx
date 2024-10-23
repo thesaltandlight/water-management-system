@@ -1,11 +1,19 @@
-import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import { FaShoppingCart } from "react-icons/fa";
 
 function Checkout() {
     const [selectedMethod, setSelectedMethod] = useState('')
+    const [popUp, setPopUp] = useState(false)
 
     const handlePaymentChange = (event) => {
         setSelectedMethod(event.target.value)
+    }
+
+    const handleOrderNow = () => {
+        setPopUp(true);
+        setTimeout(() => {
+            setPopUp(false)
+        },1700)
     }
 
     return (
@@ -57,9 +65,21 @@ function Checkout() {
                 </div>
 
                 {/* Order Now Button */}
-                <NavLink to="/checkout">
-                    <button className="w-full py-3 bg-[#24619D] text-white font-bold rounded">Order Now</button>
-                </NavLink>
+                    <button onClick={handleOrderNow} className="px-4 py-3 fixed bottom-14 right-20 bg-[#095EAE] text-white font-semibold rounded-xl">Order Now</button>
+
+                    {popUp && (
+                        <>
+                        {/* Background */}
+                        <div className="fixed inset-0 bg-[#000000] opacity-50 z-40"></div>
+                        {/* PopUp */}
+                        <div className="fixed inset-0 flex items-center justify-center z-50">
+                            <div className="bg-[#FFF] text-[#095EAE] py-16 px-24 rounded-xl text-3xl font-semibold flex flex-col items-center justify-center w-2/3 h-2/3 text-center">
+                            <FaShoppingCart className="text-[#095EAE] text-[140px] animate-bounce mt-10 mb-20"/> 
+                            Your order has been placed successfully. You will receive an email notification shortly.
+                            </div>
+                        </div>
+                        </>
+                    )}
             </div>
         </div>
     );
