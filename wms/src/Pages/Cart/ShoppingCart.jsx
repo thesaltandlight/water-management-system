@@ -8,10 +8,12 @@ function ShoppingCart() {
 
     return (
         <div>
-            <button onClick={() => navigate(-1)} className="fixed top-5 left-6 mb-6 flex items-center space-x-2 z-50">
-            <FiArrowLeft className="text-[#095EAE]"/>
-            <span className="text-[16px] text-[#095EAE] font-bold">Back</span>
-            </button>
+            <div className="bg-[#FFFFFF]">
+                <button onClick={() => navigate(-1)} className="fixed top-5 left-6 mb-6 flex items-center space-x-2 z-50">
+                <FiArrowLeft className="text-[#095EAE]"/>
+                <span className="text-[16px] text-[#095EAE] font-bold">Back</span>
+                </button>
+            </div>
 
             <div className="w-full mx-auto my-10 px-10 flex flex-col lg:flex-row lg:gap-10">
                 {/* Cart Section */}

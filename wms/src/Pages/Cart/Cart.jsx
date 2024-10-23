@@ -16,7 +16,7 @@ function Cart(){
 
     return(
         <div className="w-full mt-4">
-            <div className="bg-[#FFFFFF] fixed top-14 left-6 w-full lg:w-8/12 z-20 p-4">
+            <div className="bg-[#FFFFFF] fixed top-11 left-6 w-full lg:w-8/12 z-20 p-4">
                 <h1 className="text-[36px]  font-extrabold text-[#095EAE]">Shopping Cart</h1>
                 {/* Categories */}
                 <div className="grid grid-cols-[4fr_2fr_2fr_1fr.0.5fr] gap-6 p-4 font-semibold text-[20px] border-b border-[#757575] border-opacity-30">
@@ -28,7 +28,7 @@ function Cart(){
                 </div>
             </div>
 
-            <div className="pt-[140px]">
+            <div className="pt-[140px] pb-[30px] overflow-y-auto max-h-[calc(100vh-180px)] scrollbar-hide">
             {cart.map(product => (
                 <div key={product.id} className="grid grid-cols-[4fr_2fr_2fr_1fr.0.5fr] gap-6 p-4 ">
                     {/* product */}
@@ -64,7 +64,7 @@ function Cart(){
             ))}
 
             {/* footer */}
-            <div className="bg-[#FFF] fixed bottom-0 left-6 w-full lg:w-8/12 p-4 z-20">
+            <div className="bg-[#FFF] h-40 fixed bottom-0 left-6 w-full lg:w-8/12 p-4 z-20">
             {/* subtotal */}
             <div className="flex justify-end items-center font-normal mb-2 text-[#757575] text-[18px]">
                 <div className="flex w-full max-w-sm justify-between mr-10">
